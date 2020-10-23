@@ -1,4 +1,5 @@
-
+![](https://images.cooltext.com/5474824.png)
+<a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
 ***Introducción al Ensamblador***
 ----------------------------------------------------------
@@ -114,17 +115,29 @@ EQ (equal, igual). Cuando Z está activo (Z vale 1).
 NEQ (not equal, igual). Cuando Z está inactivo (Z vale 0). 
 
 MI (minus, negativo). Cuando N está activo (N vale 1).
+
 PL (plus, positivo o cero). Cuando N está inactivo (N vale 0).
+
 CS/HS (carry set/higher or same, carry activo/mayor o igual). Cuando C está activo(C vale 1).
+
 CC/LO (carry clear/lower, carry inactivo/menor). Cuando C está inactivo (C vale 0).
+
 VS (overlow set, desbordamiento activo). Cuando V está activo (V vale 1). 
+
 VC (overlow clear, desbordamiento inactivo). Cuando V está inactivo (V vale 0).
+
 GT (greater than, mayor en complemento a dos). Cuando Z está inactivo y N=V (Z vale 0, N vale V).
+
 LT (lower than, menor en complemento a dos). Cuando N!=V (N vale not V).
+
 GE (greater or equal, mayor o igual en complemento a dos). Cuando N=V (N valeV). 
+
 LE (lower or equal, menor o igual en complemento a dos). Cuando Z está activo y N!=V (Z vale 1, N vale not V).
+
 HI (higher, mayor). Cuando C está activo y Z inactivo (C vale 1, Z vale 0).
+
 LS (lower or same, menor o igual). Cuando C está inactivo ó Z activo (C vale 0 ó Z vale 1).
+
 **Estructuras de control de alto nivel.**
 Las estructuras for y while se pueden ejecutar un mínimo de 0 iteraciones (si la primera vez no se cumple la condición).Para usarlas en ensamblador estas estructuras se utilizan instrucciones de salto condicional. 
 
