@@ -8,11 +8,12 @@ la enseñanza de conceptos sobre la informática en el entorno estudiantil.ARM e
 una arquitectura de RISC de 32 bits.
 La arquitectura ARMv6 presenta un conjunto de 17 registros (16 principales más uno de estado)
 de 32 bits cada uno, de los cuales se dividen en los siguiente:
--Registros Generales. Su función es el almacenamiento temporal de datos. Son los 13 registros
+
+**1.-Registros Generales.** Su función es el almacenamiento temporal de datos. Son los 13 registros
 que van R0 hasta R12.
--Registros Especiales. Son los últimos 3 registros principales: R13, R14 y R15. Como son de 
+**2.-Registros Especiales.** Son los últimos 3 registros principales: R13, R14 y R15. Como son de 
 propósito especial, tienen nombres alternativos.
--Registro CPSR. Almacena las banderas condicionales y los bits de control. 
+**3.-Registro CPSR.** Almacena las banderas condicionales y los bits de control. 
 Los bits de control definen la habilitación de interrupciones normales (I), interrupciones rápidas
 (F), modo Thumb 1 (T) y el modo de operación de la CPU. 
 El procesador que maneja es Bi-Endian es decir que puede ser configurable entre Big Endian y Little
@@ -24,9 +25,10 @@ con respecto a otros lenguajes de un nivel más alto, por su bajo nivel cuenta c
 posibilidad de acceso directo a nivel de registro de lo contrario puede ser tedioso el programar en ensamblador.
 La principal característica de un módulo fuente en ensamblador es que existe una clara separación entre las instrucciones 
 y los datos. La estructura más general de un módulo fuente es:
-* Sección de datos: En esta zona se definen todas las variables que utiliza el programa .
-* Sección de código. Se indica con la directiva .text, y sólo puede contener código o datos no modificables.
+**Sección de datos:** En esta zona se definen todas las variables que utiliza el programa .
+**Sección de código**. Se indica con la directiva .text, y sólo puede contener código o datos no modificables.
 **Datos.**
+
 Los datos se pueden representar de distintas maneras:
 1.-Decimal.
 2.-Hexadecimal.
@@ -39,9 +41,9 @@ Las macros y las constantes simbólicas son símbolos que pertenece al preproces
 Las instrucciones del as responden al formato general:
 Etiqueta : Nemot é cnico Operando / s /* Comentario */
 -El Campo etiqueta, si aparece, debe estar formado por una cadena alfanumérica. La cadena no debe comenzar con un dígito y no se puede utilizar como cadena alguna palabra reservada del as ni nombre de registro del microprocesador. 
--El campo Nemotécnico (ldr en el ejemplo) es una forma abreviada de nombrar la instrucción del procesador. Está formado por caracteres alfabéticos (entre 1 y 11 caracteres). 
--El campo Operando/s indica dónde se encuentran los datos.
--El campo Comentario es opcional (r1 <- &var1, en el ejemplo) y debe comenzar con la secuencia /* y acabar con */.
+-El Campo Nemotécnico (ldr en el ejemplo) es una forma abreviada de nombrar la instrucción del procesador. Está formado por caracteres alfabéticos (entre 1 y 11 caracteres). 
+-El Campo Operando/s indica dónde se encuentran los datos.
+-El Campo Comentario es opcional (r1 <- &var1, en el ejemplo) y debe comenzar con la secuencia /* y acabar con */.
 Cada instrucción del as se refiere a una operación que puede realizar el microprocesador.Se pueden agrupar el conjunto de las instrucciones según el tipo de función que  realice el microprocesador, en las siguientes categorías:
 -Instrucciones de transferencia de datos.
 Mueven información entre registros y posiciones de memoria.
