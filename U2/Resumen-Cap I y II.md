@@ -21,6 +21,7 @@ propósito especial, tienen nombres alternativos.
 **3.-Registro CPSR.** Almacena las banderas condicionales y los bits de control. 
 Los bits de control definen la habilitación de interrupciones normales (I), interrupciones rápidas
 (F), modo Thumb 1 (T) y el modo de operación de la CPU. 
+
 El procesador que maneja es Bi-Endian es decir que puede ser configurable entre Big Endian y Little
 Endian,sin embargo existe una regla que dice que el byte menos significativo ocupa la posición más baja.
 El ensamblador es un lenguaje de bajo nivel que permite un control directo de
