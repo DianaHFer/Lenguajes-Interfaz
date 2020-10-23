@@ -18,19 +18,24 @@ Los bits de control definen la habilitación de interrupciones normales (I), int
 El procesador que maneja es Bi-Endian es decir que puede ser configurable entre Big Endian y Little
 Endian,sin embargo existe una regla que dice que el byte menos significativo ocupa la posición más baja.
 El ensamblador es un lenguaje de bajo nivel que permite un control directo de
-la CPU y todos los elementos asociados cada una de sus líneas contas de una instrucción del procesador y la posición que dichos datos ocupan de esta instrucción, presenta una serie de ventajas e inconvenientes con respecto a otros lenguajes de un nivel más alto, por su bajo nivel cuenta con la flexibilidad y la posibilidad de acceso directo a nivel de registro de lo contrario puede ser tedioso el programar en ensamblador.
-La principal característica de un módulo fuente en ensamblador es que existe una clara separación entre las instrucciones y los datos. La estructura más general de un módulo fuente es:
- * Sección de datos: En esta zona se definen todas las variables que utiliza el programa .
+la CPU y todos los elementos asociados cada una de sus líneas contas de una instrucción del procesador y
+la posición que dichos datos ocupan de esta instrucción, presenta una serie de ventajas e inconvenientes 
+con respecto a otros lenguajes de un nivel más alto, por su bajo nivel cuenta con la flexibilidad y la 
+posibilidad de acceso directo a nivel de registro de lo contrario puede ser tedioso el programar en ensamblador.
+La principal característica de un módulo fuente en ensamblador es que existe una clara separación entre las instrucciones 
+y los datos. La estructura más general de un módulo fuente es:
+* Sección de datos: En esta zona se definen todas las variables que utiliza el programa .
 * Sección de código. Se indica con la directiva .text, y sólo puede contener código o datos no modificables.
-Datos.
+**Datos.**
 Los datos se pueden representar de distintas maneras:
 1.-Decimal.
 2.-Hexadecimal.
 3.-Binaria.
 4.-Octal.
-Símbolos.
+
+**Símbolos.**
 Las macros y las constantes simbólicas son símbolos que pertenece al preprocesador, a diferencia de las etiquetas que pertenecen al ensamblador. Se especifican con las directivas .macro y .equ respectivamente y permiten que el código sea más legible y menos repetitivo. 
-Instrucciones.
+**Instrucciones.**
 Las instrucciones del as responden al formato general:
 Etiqueta : Nemot é cnico Operando / s /* Comentario */
 -El Campo etiqueta, si aparece, debe estar formado por una cadena alfanumérica. La cadena no debe comenzar con un dígito y no se puede utilizar como cadena alguna palabra reservada del as ni nombre de registro del microprocesador. 
@@ -59,13 +64,13 @@ En la arquitectura ARM los accesos a memoria se hacen mediante instrucciones esp
 -Direccionamiento inmediato con desplazamiento o rotación. Es una variante del anterior en la cual se permiten operaciones intermedias sobre los registros.
 -Direccionamiento a memoria, sin actualizar registro puntero. Es la forma más sencilla y admite 4 variantes. 
 -Direccionamiento a memoria, actualizando registro puntero. En este modo de direccionamiento, el registro que genera la dirección se actualiza con la propia dirección.
-Punteros.
+**Punteros.**
 Un puntero siempre ocupa 32 bits y contiene una dirección de memoria.
-Vectores.
+**Vectores.**
 Todos los elementos de un vector se almacenan en un único bloque de memoria a partir de una dirección determinada.
-Matrices bidimensionales.
+**Matrices bidimensionales.**
 Una matriz bidimensional de N×M elementos se almacena en un único bloque de memoria.
-Instrucciones de salto.
+**Instrucciones de salto.**
 Las instrucciones de salto pueden producir saltos incondicionales (b y bx) o saltos condicionales. 
 La lista completa de condiciones es : 
 EQ (equal, igual). Cuando Z está activo (Z vale 1).
@@ -82,7 +87,7 @@ GE (greater or equal, mayor o igual en complemento a dos). Cuando N=V (N valeV).
 LE (lower or equal, menor o igual en complemento a dos). Cuando Z está activo y N!=V (Z vale 1, N vale not V).
 HI (higher, mayor). Cuando C está activo y Z inactivo (C vale 1, Z vale 0).
 LS (lower or same, menor o igual). Cuando C está inactivo ó Z activo (C vale 0 ó Z vale 1).
-Estructuras de control de alto nivel.
+**Estructuras de control de alto nivel.**
 Las estructuras for y while se pueden ejecutar un mínimo de 0 iteraciones (si la primera vez no se cumple la condición).Para usarlas en ensamblador estas estructuras se utilizan instrucciones de salto condicional. 
 
 
