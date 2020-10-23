@@ -1,6 +1,6 @@
-
 ![](https://images.cooltext.com/5474813.png)
 <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
+
 
 En este libro nos habla sobre lo que es un minicomputador Raspberry Pi definiéndolo como una placa del tamaño de una tarjeta de crédito,con el objetivo de poder promover la enseñanza de conceptos sobre la informática en el entorno estudiantil.ARM es considera una arquitectura de RISC de 32 bits y siendo asi una arquitectura licenciable.La arquitectura ARMv6 presenta un conjunto de 17 registros (16 principales más uno de estado) de 32 bits cada uno,de los cuales se dividen en los siguiente:
 -Registros Generales. Su función es el almacenamiento temporal de datos. Son los 13 registros que van R0 hasta R12.
