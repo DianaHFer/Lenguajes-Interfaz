@@ -1,13 +1,22 @@
-![](https://images.cooltext.com/5474817.png)
-
-<a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
 
-En este libro nos habla sobre lo que es un minicomputador Raspberry Pi definiéndolo como una placa del tamaño de una tarjeta de crédito,con el objetivo de poder promover la enseñanza de conceptos sobre la informática en el entorno estudiantil.ARM es considera una arquitectura de RISC de 32 bits y siendo asi una arquitectura licenciable.La arquitectura ARMv6 presenta un conjunto de 17 registros (16 principales más uno de estado) de 32 bits cada uno,de los cuales se dividen en los siguiente:
--Registros Generales. Su función es el almacenamiento temporal de datos. Son los 13 registros que van R0 hasta R12.
--Registros Especiales. Son los últimos 3 registros principales: R13, R14 y R15. Como son de propósito especial, tienen nombres alternativos.
--Registro CPSR. Almacena las banderas condicionales y los bits de control. Los bits de control definen la habilitación de interrupciones normales (I), interrupciones rápidas (F), modo Thumb 1 (T) y el modo de operación de la CPU. 
-El procesador que maneja es Bi-Endian es decir que puede ser configurable entre Big Endian y Little Endian,sin embargo existe una regla que dice que el byte menos significativo ocupa la posición más baja.
+***Introducción al Ensamblador***
+----------------------------------------------------------
+En este libro nos habla sobre lo que es un minicomputador Raspberry Pi definiéndolo 
+como una placa del tamaño de una tarjeta de crédito,con el objetivo de poder promover
+la enseñanza de conceptos sobre la informática en el entorno estudiantil.ARM es considera
+una arquitectura de RISC de 32 bits.
+La arquitectura ARMv6 presenta un conjunto de 17 registros (16 principales más uno de estado)
+de 32 bits cada uno, de los cuales se dividen en los siguiente:
+-Registros Generales. Su función es el almacenamiento temporal de datos. Son los 13 registros
+que van R0 hasta R12.
+-Registros Especiales. Son los últimos 3 registros principales: R13, R14 y R15. Como son de 
+propósito especial, tienen nombres alternativos.
+-Registro CPSR. Almacena las banderas condicionales y los bits de control. 
+Los bits de control definen la habilitación de interrupciones normales (I), interrupciones rápidas
+(F), modo Thumb 1 (T) y el modo de operación de la CPU. 
+El procesador que maneja es Bi-Endian es decir que puede ser configurable entre Big Endian y Little
+Endian,sin embargo existe una regla que dice que el byte menos significativo ocupa la posición más baja.
 El ensamblador es un lenguaje de bajo nivel que permite un control directo de
 la CPU y todos los elementos asociados cada una de sus líneas contas de una instrucción del procesador y la posición que dichos datos ocupan de esta instrucción, presenta una serie de ventajas e inconvenientes con respecto a otros lenguajes de un nivel más alto, por su bajo nivel cuenta con la flexibilidad y la posibilidad de acceso directo a nivel de registro de lo contrario puede ser tedioso el programar en ensamblador.
 La principal característica de un módulo fuente en ensamblador es que existe una clara separación entre las instrucciones y los datos. La estructura más general de un módulo fuente es:
@@ -41,6 +50,10 @@ Las directivas más frecuentes en el as son:
 -Directivas de Macros: Una .macro es un conjunto de sentencias en ensamblador (directivas e instrucciones) que pueden aparecer varias veces repetidas en un cbed A. Villena, R. Asenjo, F. Corbera. DAC-UMA. 14 1.1.
 Funcionamiento de las instrucciones de desplazamiento y rotación.
 Las instrucciones de desplazamiento pueden ser lógicas o aritméticas. Los desplazamientos lógicos desplazan los bit del registro fuente introduciendo ceros (uno o más de uno).Las instrucciones de rotación también se desplazan, pero el bit que sale del valor se realimenta. 
+
+
+***Tipos de datos y sentencias de alto nivel***
+------------------------------------------------------------------------------
 En la arquitectura ARM los accesos a memoria se hacen mediante instrucciones específicas ldr y str.. El resto de instrucciones toman operandos desde registros o valores inmediatos, sin excepciones.
 -Direccionamiento inmediato. El operando fuente es una constante, formando parte de la instrucción.
 -Direccionamiento inmediato con desplazamiento o rotación. Es una variante del anterior en la cual se permiten operaciones intermedias sobre los registros.
