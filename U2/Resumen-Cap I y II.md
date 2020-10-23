@@ -11,6 +11,7 @@ de 32 bits cada uno, de los cuales se dividen en los siguiente:
 
 **1.-Registros Generales.** Su función es el almacenamiento temporal de datos. Son los 13 registros
 que van R0 hasta R12.
+
 **2.-Registros Especiales.** Son los últimos 3 registros principales: R13, R14 y R15. Como son de 
 propósito especial, tienen nombres alternativos.
 **3.-Registro CPSR.** Almacena las banderas condicionales y los bits de control. 
