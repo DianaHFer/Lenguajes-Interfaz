@@ -1,5 +1,5 @@
  
-//  Código del programa intro3.s
+//  Código del programa intro4.s
 //@@ Instituto Tecnologico de Tijuana
 //@@ Depto de Sistemas y Computación
 //@@ Ing.En Sistemas Computacionales
