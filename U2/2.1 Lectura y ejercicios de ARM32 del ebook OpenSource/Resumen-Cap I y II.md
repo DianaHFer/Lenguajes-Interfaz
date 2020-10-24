@@ -106,6 +106,10 @@ Todos los elementos de un vector se almacenan en un único bloque de memoria a p
 **Matrices bidimensionales.**
 
 Una matriz bidimensional de N×M elementos se almacena en un único bloque de memoria.
+**Instrucciones de multiplicación**
+Las instrucciones de multiplicación admiten muchas posibilidades, debido a que
+es una operación en la cual el resultado tiene el doble de bits que cada operando.
+En la siguiente tabla vemos las 5 instrucciones de multiplicación que existen.
 
 **Instrucciones de salto.**
 
