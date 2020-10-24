@@ -114,7 +114,7 @@ Las instrucciones de multiplicación admiten muchas posibilidades, debido a que
 es una operación en la cual el resultado tiene el doble de bits que cada operando.
 En la siguiente tabla vemos las 5 instrucciones de multiplicación que existen.
 
-![](U2/2.1 Lectura y ejercicios de ARM32 del ebook OpenSource/Imagenes/multiplicacion.png)
+![](https://github.com/DianaHFer/Lenguajes-Interfaz/Lectura y ejercicios de ARM32 del ebook OpenSource/Imagenes/multiplicacion.png)
 
 **Instrucciones de salto.**
 
