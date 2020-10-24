@@ -153,4 +153,4 @@ LS (lower or same, menor o igual). Cuando C está inactivo ó Z activo (C vale 0
 Las estructuras for y while se pueden ejecutar un mínimo de 0 iteraciones (si la primera vez no se cumple la condición).Para usarlas en ensamblador estas estructuras se utilizan instrucciones de salto condicional. 
 
 
-
+[Fuente consultada](https://riuma.uma.es/xmlui/bitstream/handle/10630/10214/LibroDePracticas.pdf?sequence=1&isAllowed=y)
